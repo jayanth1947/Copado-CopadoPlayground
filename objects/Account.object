@@ -394,6 +394,18 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Phone_Filed_Should_not_be_null</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Phone)</errorConditionFormula>
+        <errorMessage>Phone Field is required to save the record</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Revenue_should_be_greater_than_1000</fullName>
+        <active>true</active>
+        <errorConditionFormula>AnnualRevenue &gt; 1000</errorConditionFormula>
+        <errorMessage>Revenue should be from greater than 1000</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>

@@ -207,6 +207,15 @@
         <visibleLines>10</visibleLines>
     </fields>
     <fields>
+        <fullName>Fight_id__c</fullName>
+        <displayFormat>A-{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Flight id</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>Seating_Capacity__c</fullName>
         <externalId>false</externalId>
         <label>Seating Capacity</label>

@@ -154,128 +154,97 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Address__c</fullName>
+        <fullName>Aeroplane_id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Address</label>
+        <label>Aeroplane id</label>
+        <referenceTo>Airplane__c</referenceTo>
+        <relationshipLabel>Flights</relationshipLabel>
+        <relationshipName>Flights</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Contact_Number__c</fullName>
+        <fullName>Arrival_Date_and_Time__c</fullName>
         <externalId>false</externalId>
-        <label>Contact Number</label>
+        <label>Arrival Date and Time</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Phone</type>
+        <type>DateTime</type>
     </fields>
     <fields>
-        <fullName>Email__c</fullName>
+        <fullName>Available_Seats__c</fullName>
         <externalId>false</externalId>
-        <label>Email</label>
+        <label>Available Seats</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Email</type>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>First_Name__c</fullName>
+        <fullName>Departure_Date_and_Time__c</fullName>
         <externalId>false</externalId>
-        <label>First Name</label>
-        <length>18</length>
+        <label>Departure Date and Time</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>DateTime</type>
     </fields>
     <fields>
-        <fullName>Food_Preference__c</fullName>
+        <fullName>Embed_URL__c</fullName>
         <externalId>false</externalId>
-        <label>Food Preference</label>
-        <required>false</required>
+        <label>Embed URL</label>
+        <length>131072</length>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>true</sorted>
-                <value>
-                    <fullName>Coffee</fullName>
-                    <default>false</default>
-                    <label>Coffee</label>
-                </value>
-                <value>
-                    <fullName>Sandwich</fullName>
-                    <default>false</default>
-                    <label>Sandwich</label>
-                </value>
-                <value>
-                    <fullName>Soft Drinks</fullName>
-                    <default>false</default>
-                    <label>Soft Drinks</label>
-                </value>
-                <value>
-                    <fullName>Tea</fullName>
-                    <default>false</default>
-                    <label>Tea</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
     </fields>
     <fields>
-        <fullName>From__c</fullName>
-        <externalId>false</externalId>
-        <label>From</label>
-        <length>10</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Last_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>Last Name</label>
-        <length>18</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Passenger_id__c</fullName>
+        <fullName>Fight_id__c</fullName>
         <displayFormat>A-{0000}</displayFormat>
         <externalId>false</externalId>
-        <label>Passenger id</label>
+        <label>Flight id</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>AutoNumber</type>
     </fields>
     <fields>
-        <fullName>To__c</fullName>
+        <fullName>From__c</fullName>
         <externalId>false</externalId>
-        <label>To</label>
-        <length>10</length>
+        <label>From</label>
+        <length>18</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Passenger</label>
+    <fields>
+        <fullName>Seating_Capacity__c</fullName>
+        <externalId>false</externalId>
+        <label>Seating Capacity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Flight</label>
     <nameField>
-        <label>Passenger Name</label>
+        <label>Flight Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Passengers</pluralLabel>
+    <pluralLabel>Flights</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

@@ -154,6 +154,30 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Fare__c</fullName>
+        <externalId>false</externalId>
+        <label>Fare</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Flight_id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Flight id</label>
+        <referenceTo>Flight__c</referenceTo>
+        <relationshipLabel>Tickets</relationshipLabel>
+        <relationshipName>Tickets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Food_Preference__c</fullName>
         <externalId>false</externalId>
         <label>Food Preference</label>
@@ -198,6 +222,70 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Passenger_id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Passenger id</label>
+        <referenceTo>Passenger__c</referenceTo>
+        <relationshipLabel>Tickets</relationshipLabel>
+        <relationshipName>Tickets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ticket_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First Class</fullName>
+                    <default>false</default>
+                    <label>First Class</label>
+                </value>
+                <value>
+                    <fullName>Economy Class</fullName>
+                    <default>false</default>
+                    <label>Economy Class</label>
+                </value>
+                <value>
+                    <fullName>Business Class</fullName>
+                    <default>false</default>
+                    <label>Business Class</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ticket_id__c</fullName>
+        <displayFormat>A-{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Ticket id</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
     </fields>
     <fields>
         <fullName>To__c</fullName>

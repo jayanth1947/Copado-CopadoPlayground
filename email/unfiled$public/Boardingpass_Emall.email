@@ -1,0 +1,12 @@
+Hello {!Boarding_Pass__c.Boarding_Pass_Id__c} 
+
+Your Boarding pass Details are
+
+Boarding pass Id :{!Boarding_Pass__c.Boarding_Pass_Id__c}
+
+TIcket Id : {!Boarding_Pass__c.Ticket_id__c}
+
+Flight iD: {!Boarding_Pass__c.Flight_id__c}
+
+
+Passenger Id: {!Boarding_Pass__c.Passenger_id__c}

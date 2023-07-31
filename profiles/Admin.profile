@@ -6375,11 +6375,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Airline__c.test_field__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Airplane__c.Aeroplane_id__c</field>
         <readable>true</readable>
     </fieldPermissions>

@@ -200,17 +200,6 @@
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
-    <fields>
-        <fullName>test_field__c</fullName>
-        <externalId>false</externalId>
-        <label>test field</label>
-        <length>10</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <label>Airline</label>
     <nameField>
         <label>Airline Name</label>
